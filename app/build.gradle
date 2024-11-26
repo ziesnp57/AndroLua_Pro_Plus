@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 android {
     compileSdkVersion 30
+    namespace 'com.androlua'
     defaultConfig {
         applicationId "com.androlua"
         minSdkVersion 19
@@ -28,7 +29,7 @@ android {
         debug {
             minifyEnabled false
             debuggable true
-            jniDebuggable true
+            jniDebuggable false
         }
 
     }
